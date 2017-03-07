@@ -18,6 +18,7 @@ public class RecipeBookContract {
         public static final String TABLE_NAME = "recipe_book";
 
         public static final String COLUMN_RECIPE = "recipe";
+        public static final String COLUMN_DATE_ADDED = "date";
     }
 
     public static final class RecipeEntry implements BaseColumns {
@@ -29,7 +30,6 @@ public class RecipeBookContract {
         public static final String COLUMN_NOTE_LIST = "note_list";
         public static final String COLUMN_PREP_TIME = "prep_time";
         public static final String COLUMN_COOK_TIME = "cook_time";
-        public static final String COLUMN_TOTAL_TIME = "total_time";
         public static final String COLUMN_LAST_MADE = "last_made";
         public static final String COLUMN_RECIPE_NAME = "recipe_name";
         public static final String COLUMN_TYPE = "type";
@@ -48,7 +48,7 @@ public class RecipeBookContract {
 
         public static final String COLUMN_INGREDIENT = "ingredient";
         public static final String COLUMN_AMOUNT = "amount";
-        public static final String COLUMN_MEASURE = "measure";
+//        public static final String COLUMN_MEASURE = "measure";
     }
 
     public static final class NoteListEntry implements  BaseColumns {
@@ -58,7 +58,6 @@ public class RecipeBookContract {
         public static final String COLUMN_PICTURE = "picture";
         public static final String COLUMN_PREP_TIME = "prep_time";
         public static final String COLUMN_COOK_TIME = "cook_time";
-        public static final String COLUMN_TOTAL_TIME = "total_time";
         public static final String COLUMN_DATE = "date";
     }
 
@@ -66,5 +65,6 @@ public class RecipeBookContract {
         public static final String TABLE_NAME = "instruction_list";
 
         public static final String COLUMN_INSTRUCTION = "instruction";
+        public static final String COLUMN_ORDER = "order";
     }
 }
