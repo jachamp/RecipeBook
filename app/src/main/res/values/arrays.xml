@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="spinner_options">
+        <item>@string/name_option</item>
+        <item>@string/type_option</item>
+        <item>@string/ingredient_option</item>
+        <item>@string/tag_option</item>
+    </string-array>
+</resources>

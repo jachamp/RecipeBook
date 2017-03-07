@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Recipe Book</string>
+
+    <!-- Strings for Main Activity -->
+    <string name="search_button">Search</string>
+    <string name="add_recipe_button">Add Recipe</string>
+
+    <!-- Strings for Search Activity -->
+    <string name="search_label">Search By:</string>
+
+    <string name="name_option">Name</string>
+    <string name="type_option">Type</string>
+    <string name="ingredient_option">Ingredients</string>
+    <string name="tag_option">Tags</string>
+
+    <string name="name_search_hint">Enter recipe name&#8230;</string>
+
+</resources>

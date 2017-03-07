@@ -1,8 +1,13 @@
-package com.jachamp.android.recipebook;
+package com.jachamp.android.recipebook.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.jachamp.android.recipebook.R;
+
+/**
+ *
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
