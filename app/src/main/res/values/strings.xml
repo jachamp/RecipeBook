@@ -14,5 +14,12 @@
     <string name="tag_option">Tags</string>
 
     <string name="name_search_hint">Enter recipe name&#8230;</string>
+    <string name="title_activity_display_recipe">DisplayRecipeActivity</string>
+
+    <string name="title_activity_take_photo">TakePhotoActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_photo_confirmation">PhotoConfirmationActivity</string>
 
 </resources>

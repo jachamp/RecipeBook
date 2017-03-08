@@ -15,7 +15,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.SearchActivity"></activity>
+        <activity android:name=".views.SearchActivity" />
+        <activity android:name=".views.DisplayRecipeActivity" />
+        <activity android:name=".views.AddNoteActivity" />
+        <activity
+            android:name=".views.TakePhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_take_photo"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".views.PhotoConfirmationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_photo_confirmation"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".views.AddRecipeActivity" />
+        <activity android:name=".views.RecipeConfirmationActivity" />
+        <activity android:name=".views.IngredientSearchActivity" />
+        <activity android:name=".views.TagSearchActivity" />
+        <activity android:name=".views.SearchResultActivity"></activity>
     </application>
 
 </manifest>
