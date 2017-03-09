@@ -1,19 +1,41 @@
 package com.jachamp.android.recipebook.data;
 
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 /**
- * Created by jchamp on 2/28/17.
+ * Defines the tables and column names for the recipe book database.
+ *
+ * @author James Champ
+ * @version 1.0, 28 February 2017
  */
 
-//TODO: Add comments to everything
-
 public class RecipeBookContract {
+    /**
+     * Name of the content provider.
+     */
     public static final String CONTENT_AUTHORITY = "com.jachamp.android.recipebook";
 
-    // This will not change until database is implemented
-    public static final int VERSION_NUMBER = 1;
+    /**
+     * Base of all URI's that apps will use to contact RecipeBook's content provider.
+     */
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
+    /**
+     * Possible paths that can be appended to BASE_CONTENT_URI to form valid URI's.
+     */
+    public static final String PATH_RECIPE_BOOK = "recipe_book";
+    public static final String PATH_RECIPE = "recipe";
+    public static final String PATH_TAG_LIST = "tag_list";
+    public static final String PATH_INGREDIENT_LIST = "ingredient_list";
+    public static final String PATH_NOTE_LIST = "note_list";
+    public static final String PATH_INSTRUCTION_LIST = "instruction_list";
+
+    //TODO: Add comments to inner classes
+
+    /**
+     *
+     */
     public static final class RecipeBookEntry implements BaseColumns {
         public static final String TABLE_NAME = "recipe_book";
 
@@ -21,6 +43,9 @@ public class RecipeBookContract {
         public static final String COLUMN_DATE_ADDED = "date";
     }
 
+    /**
+     *
+     */
     public static final class RecipeEntry implements BaseColumns {
         public static final String TABLE_NAME = "recipe";
 
@@ -37,12 +62,18 @@ public class RecipeBookContract {
         public static final String COLUMN_SERVINGS = "servings";
     }
 
+    /**
+     *
+     */
     public static final class TagListEntry implements BaseColumns {
         public static final String TABLE_NAME = "tag_list";
 
         public static final String COLUMN_TAG = "tag";
     }
 
+    /**
+     *
+     */
     public static final class IngredientListEntry implements BaseColumns {
         public static final String TABLE_NAME = "ingredient_list";
 
@@ -51,6 +82,9 @@ public class RecipeBookContract {
 //        public static final String COLUMN_MEASURE = "measure";
     }
 
+    /**
+     *
+     */
     public static final class NoteListEntry implements  BaseColumns {
         public static final String TABLE_NAME = "note_list";
 
@@ -61,6 +95,9 @@ public class RecipeBookContract {
         public static final String COLUMN_DATE = "date";
     }
 
+    /**
+     *
+     */
     public static final class IntructionListEntry implements BaseColumns {
         public static final String TABLE_NAME = "instruction_list";
 

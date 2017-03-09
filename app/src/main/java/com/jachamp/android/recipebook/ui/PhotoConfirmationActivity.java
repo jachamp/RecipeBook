@@ -1,4 +1,4 @@
-package com.jachamp.android.recipebook.views;
+package com.jachamp.android.recipebook.ui;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;
@@ -14,7 +14,7 @@ import com.jachamp.android.recipebook.R;
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-public class TakePhotoActivity extends AppCompatActivity {
+public class PhotoConfirmationActivity extends AppCompatActivity {
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -89,7 +89,7 @@ public class TakePhotoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_take_photo);
+        setContentView(R.layout.activity_photo_confirmation);
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
