@@ -42,11 +42,35 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".ui.RecipeConfirmationActivity" />
-        <activity android:name=".ui.IngredientSearchActivity" />
-        <activity android:name=".ui.TagSearchActivity" />
+        <activity
+            android:name=".ui.IngredientSearchActivity"
+            android:parentActivityName=".ui.SearchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SearchActivity" />
+        </activity>
+        <activity
+            android:name=".ui.TagSearchActivity"
+            android:parentActivityName=".ui.SearchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SearchActivity" />
+        </activity>
         <activity android:name=".ui.SearchResultActivity" />
-        <activity android:name=".ui.NameSearchActivity" />
-        <activity android:name=".ui.TypeSearchActivity"></activity>
+        <activity
+            android:name=".ui.NameSearchActivity"
+            android:parentActivityName=".ui.SearchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SearchActivity" />
+        </activity>
+        <activity
+            android:name=".ui.TypeSearchActivity"
+            android:parentActivityName=".ui.SearchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SearchActivity" />
+        </activity>
     </application>
 
 </manifest>
