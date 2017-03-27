@@ -30,6 +30,9 @@
     <string name="recipe_add_instruction">Add Instruction</string>
     <string name="recipe_add_new">Add Recipe</string>
 
+    <!-- Strings for Display Recipe Activity -->
+    <string name="add_note">Add Note</string>
+
     <!-- Fragments -->
     <string name="modify_button">Modify</string>
 
@@ -40,7 +43,7 @@
 
     <string name="title_activity_photo_confirmation">PhotoConfirmationActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Placeholders for UI design -->
+    <string name="placeholder">Placeholder</string>
 
 </resources>
