@@ -13,7 +13,7 @@ import com.jachamp.android.recipebook.R;
  * A simple {@link Fragment} subclass.
  *
  * @author James Champ
- * @verson 1.0, 27 March 2017
+ * @version 1.0, 27 March 2017
  */
 public class IngredientFragment extends Fragment {
 
