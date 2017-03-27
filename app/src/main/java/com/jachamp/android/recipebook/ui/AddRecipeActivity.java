@@ -1,5 +1,6 @@
 package com.jachamp.android.recipebook.ui;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,11 +12,17 @@ import com.jachamp.android.recipebook.R;
  * @author James Champ
  * @version 1.0, 7 March 2017
  */
-public class AddRecipeActivity extends AppCompatActivity {
+public class AddRecipeActivity extends AppCompatActivity
+        implements InstructionFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_recipe);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

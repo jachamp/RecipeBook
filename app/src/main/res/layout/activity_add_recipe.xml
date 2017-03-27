@@ -131,6 +131,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/ingredientFragmentLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/ingredientTextView"
                 android:layout_width="match_parent"
@@ -173,6 +181,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/instructionFragmentLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
 
             <TextView
                 android:id="@+id/instructionTextView"
