@@ -33,6 +33,9 @@
     <!-- Strings for Display Recipe Activity -->
     <string name="add_note">Add Note</string>
 
+    <!-- Strings for Recipe Confirmation Activity -->
+    <string name="cancel_button">Cancel</string>
+
     <!-- Fragments -->
     <string name="modify_button">Modify</string>
 
