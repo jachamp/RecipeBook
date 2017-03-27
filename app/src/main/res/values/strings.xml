@@ -36,6 +36,11 @@
     <!-- Strings for Recipe Confirmation Activity -->
     <string name="cancel_button">Cancel</string>
 
+    <!-- Strings for searches -->
+    <string name="type_search">Type:</string>
+    <string name="find_button">Find</string>
+
+
     <!-- Fragments -->
     <string name="modify_button">Modify</string>
 
