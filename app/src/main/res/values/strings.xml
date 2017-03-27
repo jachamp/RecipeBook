@@ -16,6 +16,21 @@
     <string name="name_search_hint">Enter recipe name&#8230;</string>
     <string name="title_activity_display_recipe">DisplayRecipeActivity</string>
 
+    <!-- Strings for Add Recipe Activity -->
+    <!-- TODO: Add string resources for AddRecipeActivity layout's hints -->
+    <string name="recipe_name">Name:</string>
+    <string name="recipe_type">Type:</string>
+    <string name="recipe_ingredient">Ingredients:</string>
+    <string name="recipe_instruction">Instructions:</string>
+    <string name="recipe_prep_time">Prep Time:</string>
+    <string name="recipe_cook_time">Cook Time:</string>
+    <string name="recipe_tag">Tags:</string>
+    <string name="recipe_serving">Servings:</string>
+    <string name="recipe_add_ingredient">Add Ingredient</string>
+    <string name="recipe_add_instruction">Add Instruction</string>
+    <string name="recipe_add_new">Add Recipe</string>
+
+    <!-- Photo Activity -->
     <string name="title_activity_take_photo">TakePhotoActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>

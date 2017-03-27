@@ -8,31 +8,45 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.SearchActivity" />
-        <activity android:name=".views.DisplayRecipeActivity" />
-        <activity android:name=".views.AddNoteActivity" />
         <activity
-            android:name=".views.TakePhotoActivity"
+            android:name=".ui.SearchActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".ui.DisplayRecipeActivity" />
+        <activity android:name=".ui.AddNoteActivity" />
+        <activity
+            android:name=".ui.TakePhotoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_take_photo"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".views.PhotoConfirmationActivity"
+            android:name=".ui.PhotoConfirmationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_photo_confirmation"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".views.AddRecipeActivity" />
-        <activity android:name=".views.RecipeConfirmationActivity" />
-        <activity android:name=".views.IngredientSearchActivity" />
-        <activity android:name=".views.TagSearchActivity" />
-        <activity android:name=".views.SearchResultActivity"></activity>
+        <activity
+            android:name=".ui.AddRecipeActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".ui.RecipeConfirmationActivity" />
+        <activity android:name=".ui.IngredientSearchActivity" />
+        <activity android:name=".ui.TagSearchActivity" />
+        <activity android:name=".ui.SearchResultActivity" />
+        <activity android:name=".ui.NameSearchActivity" />
+        <activity android:name=".ui.TypeSearchActivity"></activity>
     </application>
 
 </manifest>

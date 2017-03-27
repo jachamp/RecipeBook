@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jachamp.android.recipebook.views.MainActivity">
+    tools:context="com.jachamp.android.recipebook.MainActivity">
 
     <Button
         android:id="@+id/search_button"
@@ -17,7 +17,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="82dp"
-        android:text="@string/search_button" />
+        android:text="@string/search_button"
+        android:onClick="startSearchActivity"/>
 
     <Button
         android:id="@+id/add_recipe_button"
@@ -26,5 +27,6 @@
         android:layout_marginTop="30dp"
         android:text="@string/add_recipe_button"
         android:layout_below="@+id/search_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startAddRecipeActivity"/>
 </RelativeLayout>
