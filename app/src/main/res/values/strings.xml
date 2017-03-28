@@ -12,6 +12,7 @@
     <string name="type_option">Type</string>
     <string name="ingredient_option">Ingredients</string>
     <string name="tag_option">Tags</string>
+    <string name="all_option">View All</string>
 
     <string name="name_search_hint">Enter recipe name&#8230;</string>
     <string name="title_activity_display_recipe">DisplayRecipeActivity</string>

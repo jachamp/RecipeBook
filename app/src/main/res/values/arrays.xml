@@ -6,5 +6,6 @@
         <item>@string/type_option</item>
         <item>@string/ingredient_option</item>
         <item>@string/tag_option</item>
+        <item>@string/all_option</item>
     </string-array>
 </resources>
