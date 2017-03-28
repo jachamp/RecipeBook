@@ -23,7 +23,6 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".ui.DisplayRecipeActivity" />
-        <activity android:name=".ui.AddNoteActivity" />
         <activity
             android:name=".ui.TakePhotoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -41,7 +40,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ui.RecipeConfirmationActivity" />
+        <activity
+            android:name=".ui.RecipeConfirmationActivity"
+            android:parentActivityName=".ui.AddRecipeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AddRecipeActivity" />
+        </activity>
         <activity
             android:name=".ui.IngredientSearchActivity"
             android:parentActivityName=".ui.SearchActivity">
@@ -70,6 +75,13 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.SearchActivity" />
+        </activity>
+        <activity
+            android:name=".ui.AddNoteActivity"
+            android:parentActivityName=".ui.DisplayRecipeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.DisplayRecipeActivity"/>
         </activity>
     </application>
 

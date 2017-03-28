@@ -41,6 +41,12 @@
     <string name="type_search">Type:</string>
     <string name="find_button">Find</string>
 
+    <!-- Strings for Add Note Activity -->
+    <string name="note_label">Note:</string>
+    <string name="note_prep_time">Prep Time:</string>
+    <string name="note_cook_time">Cook Time:</string>
+    <string name="take_picture_button">Take Picture</string>
+    <string name="add_note_button">Add Note</string>
 
     <!-- Fragments -->
     <string name="modify_button">Modify</string>
