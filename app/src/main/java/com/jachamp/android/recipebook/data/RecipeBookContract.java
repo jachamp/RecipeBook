@@ -21,10 +21,9 @@ public class RecipeBookContract {
      */
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
-    /**
+    /*
      * Possible paths that can be appended to BASE_CONTENT_URI to form valid URI's.
      */
-    public static final String PATH_RECIPE_BOOK = "recipe_book";
     public static final String PATH_RECIPE = "recipe";
     public static final String PATH_TAG_LIST = "tag_list";
     public static final String PATH_INGREDIENT_LIST = "ingredient_list";
@@ -41,26 +40,12 @@ public class RecipeBookContract {
     /**
      *
      */
-    public static final class RecipeBookEntry implements BaseColumns {
-        public static final Uri RECIPE_BOOK_CONTENT_URI = BASE_CONTENT_URI.buildUpon()
-                .appendPath(PATH_RECIPE_BOOK)
-                .build();
-
-        public static final String TABLE_NAME = "recipe_book";
-
-        public static final String COLUMN_RECIPE = "recipe";
-        public static final String COLUMN_DATE_ADDED = "date";
-    }
-
-    /**
-     *
-     */
     public static final class RecipeEntry implements BaseColumns {
         public static final Uri RECIPE_ENTRY_CONTENT_URI = BASE_CONTENT_URI.buildUpon()
                 .appendPath(PATH_RECIPE)
                 .build();
 
-        public static final String TABLE_NAME = "recipe";
+        public static final String TABLE_NAME = "recipes";
 
         public static final String COLUMN_INGREDIENT_LIST = "ingredient_list";
         public static final String COLUMN_INSTRUCTION_LIST = "instruction_list";
@@ -73,6 +58,7 @@ public class RecipeBookContract {
         public static final String COLUMN_TYPE = "type";
         public static final String COLUMN_TAG_LIST = "tag_list";
         public static final String COLUMN_SERVINGS = "servings";
+        public static final String COLUMN_DATE_ADDED = "date_added";
     }
 
     /**
@@ -101,6 +87,7 @@ public class RecipeBookContract {
         public static final String COLUMN_INGREDIENT = "ingredient";
         public static final String COLUMN_DESCRIPTION = "description";
         public static final String COLUMN_AMOUNT = "amount";
+        public static final String COLUMN_ORDER = "ingredient_order";
     }
 
     /**
@@ -113,11 +100,11 @@ public class RecipeBookContract {
 
         public static final String TABLE_NAME = "note_list";
 
-        public static final String COLUMN_SUMMARY = "summary";
+        public static final String COLUMN_NOTE = "note";
         public static final String COLUMN_PICTURE = "picture";
         public static final String COLUMN_PREP_TIME = "prep_time";
         public static final String COLUMN_COOK_TIME = "cook_time";
-        public static final String COLUMN_DATE = "date";
+        public static final String COLUMN_DATE = "date_added";
     }
 
     /**
@@ -131,6 +118,6 @@ public class RecipeBookContract {
         public static final String TABLE_NAME = "instruction_list";
 
         public static final String COLUMN_INSTRUCTION = "instruction";
-        public static final String COLUMN_ORDER = "order";
+        public static final String COLUMN_ORDER = "instruction_order";
     }
 }
