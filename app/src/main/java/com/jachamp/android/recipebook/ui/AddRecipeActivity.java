@@ -3,6 +3,8 @@ package com.jachamp.android.recipebook.ui;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.Spinner;
 
 import com.jachamp.android.recipebook.R;
 
@@ -14,6 +16,12 @@ import com.jachamp.android.recipebook.R;
  */
 public class AddRecipeActivity extends AppCompatActivity
         implements InstructionFragment.OnFragmentInteractionListener{
+
+    EditText mNameEditText;
+    Spinner mTypeSpinner;
+    EditText mPrepTimeEditText;
+    EditText mCookTimeEditText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

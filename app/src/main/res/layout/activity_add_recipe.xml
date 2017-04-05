@@ -48,15 +48,14 @@
                 android:layout_centerVertical="true"
                 android:text="@string/recipe_type" />
 
-            <EditText
-                android:id="@+id/typeEditText"
+            <Spinner
+                android:id="@+id/typeSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/typeTextView"
-                android:ems="10"
-                android:hint="Type"
-                android:inputType="text" />
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/typeTextView"
+                android:layout_toRightOf="@+id/typeTextView" />
 
         </RelativeLayout>
 
@@ -101,26 +100,6 @@
                 android:ems="10"
                 android:hint="Minutes"
                 android:inputType="time" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/servingsTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="@string/recipe_serving" />
-
-            <EditText
-                android:id="@+id/servingEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/servingsTextView"
-                android:ems="10"
-                android:inputType="number" />
         </RelativeLayout>
 
         <LinearLayout
