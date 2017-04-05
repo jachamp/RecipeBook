@@ -5,9 +5,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
+ * Contains methods used to query the recipe book database.
  *
  * @author James Champ
- * @verson 1.0, 29 March 2017
+ * @verson 1.0, 5 April 2017
  */
 
 public class RecipeBookDbHelper extends SQLiteOpenHelper {

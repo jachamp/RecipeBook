@@ -13,6 +13,8 @@ import com.jachamp.android.recipebook.R;
 /**
  * A simple {@link Fragment} subclass.
  *
+ * This fragment is used to display a single instruction to the user.
+ *
  * @author James Champ
  * @version 1.0, 27 March 2017
  */

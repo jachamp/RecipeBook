@@ -14,8 +14,12 @@ import com.jachamp.android.recipebook.R;
 /**
  * Activity that allows users to add a new recipe to the RecipeBook database.
  *
+ * Allows user to enter all pertinent information about a recipe.  Once the "Add Recipe" button is
+ * pressed, the user's input is validated.  If the information is valid, the user will be able to
+ * confirm the recipe via a RecipeConfirmationActivity.
+ *
  * @author James Champ
- * @version 1.0, 7 March 2017
+ * @version 1.0, 5 April 2017
  */
 public class AddRecipeActivity extends AppCompatActivity
         implements InstructionFragment.OnFragmentInteractionListener{
