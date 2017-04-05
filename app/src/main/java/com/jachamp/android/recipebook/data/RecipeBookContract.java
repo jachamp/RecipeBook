@@ -10,7 +10,7 @@ import android.provider.BaseColumns;
  * @version 1.0, 28 February 2017
  */
 
-public class RecipeBookContract {
+public final class RecipeBookContract {
     /**
      * Name of the content provider.
      */
@@ -40,7 +40,7 @@ public class RecipeBookContract {
     /**
      *
      */
-    public static final class RecipeEntry implements BaseColumns {
+    public static class RecipeEntry implements BaseColumns {
         public static final Uri RECIPE_ENTRY_CONTENT_URI = BASE_CONTENT_URI.buildUpon()
                 .appendPath(PATH_RECIPE)
                 .build();
@@ -110,7 +110,7 @@ public class RecipeBookContract {
     /**
      *
      */
-    public static final class IntructionListEntry implements BaseColumns {
+    public static final class InstructionListEntry implements BaseColumns {
         public static final Uri INSTRUCTION_LIST_CONTENT_URI = BASE_CONTENT_URI.buildUpon()
                 .appendPath(PATH_INSTRUCTION_LIST)
                 .build();
